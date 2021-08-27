@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Popup Menu -->
+        <div class="about">
+            <button id="exit">X</button>
+            <h3>GamePlay</h3>
+            <div id="text">
+                <span>1. This is a Single player Rock, Paper, Scissors Game.</span>
+                <br> <br>
+                <span>2. Choose any one image (ROCK, PAPER, Scissors).</span>
+                <br><br>
+                <span>3. The *BOT* also ramdomly choose any one image.</span>
+                <br> <br>
+                <span>4. Now, you can see the result.</span>
+                <br> <br>
+                <span>5. I sure, you want to play again. Just go ahead and click on the "Play again" button.</span>
+
+            </div>
+            <br>
+            <h4>Have FUN :)</h4>
+        </div>
+
+        <h1>Rock, Paper, Scissors Game</h1>
+
+        <!-- Game-images -->
+        <div id="inner-div">
+            <img id="rock" src="Assets/img/rock.png" alt="" onclick="rpsGame(this)">
+
+            <img id="paper" src="Assets/img/paper.png" alt="" onclick="rpsGame(this)">
+
+            <img id="secr" src="Assets/img/secr.jpg" alt="" onclick="rpsGame(this)">
+
+        </div>
+        <!-- Buttons -->
+        <button onclick="refresh()">Play again</button>
+        <button id="pop">About </button>
+
+    </div>
+
+
+
+    <!-- JS link -->
+    <script src="Assets/script.js"></script>
+</body>
+
+</html>
