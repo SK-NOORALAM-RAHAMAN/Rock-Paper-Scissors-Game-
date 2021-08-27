@@ -86,16 +86,27 @@ function randChoice(num) {
 function gameResult(myChoice, botChoice) {
     let output;
 
+    // Adding audios
+    const winSound = new Audio('Assets/sounds/win.wav');
+    const drawSound = new Audio('Assets/sounds/draw.wav');
+    const lostSound = new Audio('Assets/sounds/lost.wav');
+
     if ((myChoice == 'paper' && botChoice == 'rock') ||
         (myChoice == 'secr' && botChoice == 'paper') || (myChoice == 'rock' && botChoice == 'secr')) {
         output = { 'message': 'You won', 'color': 'green' };
+
+        winSound.play();
 
     } else if ((botChoice == 'paper' && myChoice == 'rock') ||
         (botChoice == 'secr' && myChoice == 'paper') || (botChoice == 'rock' && myChoice == 'secr')) {
         output = { 'message': 'You lost', 'color': 'red' };
 
+        lostSound.play();
+
     } else {
         output = { 'message': 'You tied', 'color': 'purple' };
+
+        drawSound.play();
     }
 
     return output;
