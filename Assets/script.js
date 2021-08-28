@@ -51,7 +51,7 @@ function rpsGame(choice) {
     // Adding Styles to the text 
     h1element.style.color = result.color;
     h1element.style.textShadow = 'none';
-    h1element.style.fontSize = '3rem';
+    h1element.style.fontSize = '2rem';
 
     //Appending text to h1 element
     h1element.appendChild(text);
